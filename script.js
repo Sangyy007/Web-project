@@ -87,3 +87,17 @@ const myButton = document.getElementById('myButton');
             myPopup.classList.remove('show');
             overlay.classList.remove('show');
         });
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    const workEmailInput = document.getElementById('work-email');
+    
+    workEmailInput.addEventListener('input', function() {
+        if (this.value) {
+        this.classList.add('has-value');
+        } else {
+        this.classList.remove('has-value');
+        }
+    });
+    });
+    
